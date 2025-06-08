@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+         * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFF0CA;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #75644f;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      color: antiquewhite;
+      text-align: center;
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-link {
+      background-color: #4f4437;
+      color: antiquewhite;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-link:hover {
+      background-color: #815757;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 0 10px;
+      width: 100%;
+      flex-direction: row; /* ensure sidebar is left */
+    }
+
+    aside {
+      flex: 0 0 280px;
+      background-color: #eadfbc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+
+    aside h3 {
+      margin-bottom: 12px;
+      color: #75644f;
+      border-bottom: 2px solid #75644f;
+      padding-bottom: 6px;
+    }
+
+    aside ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    aside ul li {
+      margin-bottom: 8px;
+    }
+
+    aside ul li a {
+      color: #4f4437;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    aside ul li a:hover {
+      text-decoration: underline;
+      color: #815757;
+    }
+
+    section.content {
+      flex: 1;
+      background-color: #fff6da;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #4f4437;
+    }
+
+    section.content h1 {
+      color: #75644f;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+
+    section.content p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    section.content img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
+      align-self: center;
+    }
+
+    footer {
+      background-color: #75644f;
+      color: antiquewhite;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      
+      aside {
+        max-height: none;
+        flex: none;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      section.content {
+        width: 100%;
+        padding: 15px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        gap: 5px;
+      }
+
+      .btn-link {
+        font-size: 11px;
+        padding: 5px 8px;
+      }
+
+      section.content p {
+        font-size: 14px;
+      }
+
+      section.content h1 {
+        font-size: 1.8rem;
+      }
+    }
+    </style>
+</head>
+<body>
+                <header>
+
+      
+    <h2>Bungou Stray Dogs</h2>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="btn-link">home</a>
+      <a href="organisasi.html" class="btn-link">organisasi</a>
+      <a href="member detective.html" class="btn-link">member of ADA</a>
+      <a href="member poirot.html" class="btn-link">member of port mafia</a>
+      <a href="member guild.html" class="btn-link">member of the guild</a>
+      <a href="member doa.html" class="btn-link">member of DOA</a>
+      <a href="member hunting.html" class="btn-link">member of hunting dogs</a>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <h3>Plot:</h3>
+      <ul>
+        <li><a href="season1.html">season 1</a></li>
+        <li><a href="season2.html">season 2</a></li>
+        <li><a href="season3.html">season 3</a></li>
+        <li><a href="season4.html">season 4</a></li>
+        <li><a href="season5.html">season 5</a></li>
+      </ul>
+
+      <h3>Movie:</h3>
+      <ul>
+        <li><a href="movie.html">movie: Dead apple</a></li>
+      </ul>
+
+      <h3>Spin-off:</h3>
+      <ul>
+        <li><a href="bgswan1.html">Bungou Stray Dogs wan!</a></li>
+      </ul>
+
+     
+      <h3>Tim Produksi:</h3>
+      <ul>
+        <li><a href="author.html">author</a></li>
+        <li><a href="ilustrator.html">Ilustrator</a></li>
+       
+      </ul>
+    </aside>
+
+            <section class="content" aria-label="Main content">
+              <center> <h1>  Armed Detective Agency (Badan Detektif Bersenjata)</h1></center>
+                  <br><br><h3>anggota :</h3>
+                  <ul>
+                    <li>Atsushi Nakajima<br>
+                       <img src="atsushi.jpeg" width="120"><br>
+                        Tanggal Lahir: 5 Mei<br>
+                        Tinggi: 170 cm<br>
+                        Kepribadian: Pemalu, peduli pada orang lain, sempat tidak percaya diri tapi tumbuh jadi pemimpin<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: Beast Beneath the Moonlight<br>
+                        Memungkinkan Atsushi berubah sebagian atau sepenuhnya menjadi harimau putih raksasa. Memberi kekuatan fisik luar biasa, kecepatan, dan kemampuan regenerasi tinggi<br><br> </li>
+                    <li>Osamu Dazai<br>
+                            Tanggal Lahir: 19 Juni<br>
+                            Tinggi: 181 cm<br>
+                            Kepribadian: Cerdas, manipulatif, penuh teka-teki, humor gelap, sering berpura-pura ingin bunuh diri<br>
+                            Afliasi: Armed Detective Agency (dulu Port Mafia)<br>
+                            Kemampuan: No Longer Human<br>
+                            Kemampuan yang dapat menonaktifkan atau membatalkan kekuatan supernatural orang lain hanya dengan sentuhan. Sangat berbahaya karena langsung menetralkan musuh.<br><br>
+                    </li>
+                    <li>Doppo Kunikida<br>
+                        <img src="kunikida.jpeg" width="120"><br>
+                        Tanggal Lahir: 15 Agustus<br>
+                        Tinggi: 189 cm<br>
+                        Kepribadian: Serius, idealis, sangat terorganisir, berpegang teguh pada prinsip<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: The Matchless Poet<br>
+                        Dapat mengeluarkan objek dari buku catatannya, selama benda itu bisa digambarkan secara fisik dan cukup kecil. Misalnya: senjata, tali, atau pelindung.<br><br>
+
+                    </li>
+                    <li>Akiko Yosano<br>
+                         <img src="yosano (1).jpeg" width="120"><br>
+                        Tanggal Lahir: 7 Desember<br>
+                        Tinggi: 166 cm<br>
+                        Kepribadian: Elegan dan tenang, tapi kejam pada pasien karena kemampuan penyembuhannya butuh kondisi kritis<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: Thou Shalt Not Die<br>
+                        Mampu menyembuhkan luka parah dan bahkan menyelamatkan nyawa. Namun, pasien harus berada dalam kondisi kritis agar kemampuannya bisa bekerja.<br><br>
+ 
+                    </li>
+                    <li>Kenji Miyazawa<br>
+                        <img src="kenji.jpeg" width="120"><br>
+                        Tanggal Lahir: 27 Juli<br>
+                        Tinggi: 140 cm<br>
+                        Kepribadian: Ceria, naif, suka membantu orang, sangat kuat bila lapar<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: Undefeated by the Rain<br>
+                        Memiliki kekuatan fisik luar biasa, tapi hanya ketika lapar. Ia bisa mengangkat benda sangat berat dan tahan terhadap serangan fisik berat.<br><br>
+
+                    </li>
+                    <li>
+                        Ranpo Edogawa<br>
+                        <img src="rampo.jpeg" width="120"><br>
+                        Tanggal Lahir: 21 Oktober<br>
+                        Tinggi: 168 cm<br>
+                        Kepribadian: Egois, santai, suka dipuji, sangat cerdas meski tidak punya kekuatan supranatural<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: Super Deduction (non-supernatural)<br>
+                        tidak memiliki kekuatan supernatural. Namun, kecerdasannya membuatnya mampu memecahkan kasus secara instan, seolah-olah ia punya kekuatan<br><br>
+                    </li>
+                    <li>
+                        Kyouka Izumi<br>
+                        <img src="k.jpeg" width="120"><br>
+                        Tanggal Lahir: 4 November<br>
+                        Tinggi: 148 cm<br>
+                        Kepribadian: Pendiam, sopan, ingin menjalani hidup baik setelah masa lalu kelam. Dulu anggota Port Mafia, kini detektif pemula.<br>
+                        Afliasi: Armed Detective Agency (mantan Port Mafia)<br>
+                        Kemampuan: Demon Snow<br> 
+                        Memanggil roh pembunuh yang menyerang target dengan pedang. Awalnya tidak bisa dikendalikan, tapi sekarang lebih stabil.<br><br>
+                    </li>
+                    <li>Yukichi Fukuzawa<br>
+                        <img src="f.jpeg" width="120"><br>
+                        Tanggal Lahir: 28 Januari<br>
+                        Tinggi: 186 cm<br>
+                        Kepribadian: Tenang, bijak, sangat berwibawa. Pemimpin dan pendiri Armed Detective Agency.<br>
+                        Afliasi: Armed Detective Agency (Pemimpin)<br>
+                        Kemampuan: All Men Are Equal<br>
+                        Menstabilkan kemampuan anggota agensi agar bisa dikendalikan dengan baik.<br><br></li>
+                        <li>Junichirou Tanizaki<br>
+                            <img src="j.jpeg" width="120"><br>
+                        Tanggal Lahir: 7 Juli<br>
+                        Tinggi: 174 cm<br>
+                        Kepribadian: Santai, pendiam, sangat dekat dengan adiknya. Loyal pada agensi.<br>
+                        Afliasi: Armed Detective Agency<br>
+                        Kemampuan: Light Snow <br>
+                         Menciptakan ilusi visual pada area tertentu.<br><br></li>
+                        <li>  Naomi Tanizaki<br>
+                            <img src="n.jpeg" width="129"><br>
+                            Tanggal Lahir: Tidak disebutkan<br>
+                            Tinggi: Sekitar 160 cm<br>
+                            Kepribadian: Ceria, sangat menyayangi kakaknya (Junichirou)<br>
+                            Afliasi: Bukan anggota aktif, tapi bekerja di kantor agensi<br>
+                            Kemampuan: Tidak memiliki kekuatan supernatural<br><br>
+                             </li>
+                  </ul>
+
+            </section>
+
+  </main>
+    <footer>
+    Copyright &copy; Bungou stray dogs
+  </footer>
+</body>
+</html>

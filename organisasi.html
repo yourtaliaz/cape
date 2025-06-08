@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <style>
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFF0CA;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #75644f;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      color: antiquewhite;
+      text-align: center;
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-link {
+      background-color: #4f4437;
+      color: antiquewhite;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-link:hover {
+      background-color: #815757;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 0 10px;
+      width: 100%;
+      flex-direction: row; /* ensure sidebar is left */
+    }
+
+    aside {
+      flex: 0 0 280px;
+      background-color: #eadfbc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+
+    aside h3 {
+      margin-bottom: 12px;
+      color: #75644f;
+      border-bottom: 2px solid #75644f;
+      padding-bottom: 6px;
+    }
+
+    aside ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    aside ul li {
+      margin-bottom: 8px;
+    }
+
+    aside ul li a {
+      color: #4f4437;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    aside ul li a:hover {
+      text-decoration: underline;
+      color: #815757;
+    }
+
+    section.content {
+      flex: 1;
+      background-color: #fff6da;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #4f4437;
+    }
+
+    section.content h1 {
+      color: #75644f;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+
+    section.content p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    section.content img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
+      align-self: center;
+    }
+
+    footer {
+      background-color: #75644f;
+      color: antiquewhite;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      
+      aside {
+        max-height: none;
+        flex: none;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      section.content {
+        width: 100%;
+        padding: 15px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        gap: 5px;
+      }
+
+      .btn-link {
+        font-size: 11px;
+        padding: 5px 8px;
+      }
+
+      section.content p {
+        font-size: 14px;
+      }
+
+      section.content h1 {
+        font-size: 1.8rem;
+      }
+    }
+    </style>
+</head>
+<body>
+              <header>
+
+      
+    <h2>Bungou Stray Dogs</h2>
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="btn-link">home</a>
+      <a href="organisasi.html" class="btn-link">organisasi</a>
+      <a href="member detective.html" class="btn-link">member of ADA</a>
+      <a href="member poirot.html" class="btn-link">member of port mafia</a>
+      <a href="member guild.html" class="btn-link">member of the guild</a>
+      <a href="member doa.html" class="btn-link">member of DOA</a>
+      <a href="member hunting.html" class="btn-link">member of hunting dogs</a>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <h3>Plot:</h3>
+      <ul>
+        <li><a href="season1.html">season 1</a></li>
+        <li><a href="season2.html">season 2</a></li>
+        <li><a href="season3.html">season 3</a></li>
+        <li><a href="season4.html">season 4</a></li>
+        <li><a href="season5.html">season 5</a></li>
+      </ul>
+
+      <h3>Movie:</h3>
+      <ul>
+        <li><a href="movie.html">movie: Dead apple</a></li>
+      </ul>
+
+      <h3>Spin-off:</h3>
+      <ul>
+        <li><a href="bgswan1.html">Bungou Stray Dogs wan!</a></li>
+      </ul>
+
+      
+      <h3>Tim Produksi:</h3>
+      <ul>
+        <li><a href="author.html">author</a></li>
+        <li><a href="ilustrator.html">Ilustrator</a></li>
+        
+      </ul>
+    </aside>
+ <section class="content" aria-label="Main content">
+                 <center> <h1>kumpulan organisasi</h1></center>
+                
+                 <ol>
+                        <li><b>Armed Detective Agency </b><br>
+                            <img src="tumblr_oiacakHb3t1v0uf02o2_500_gif 500×225 pixeles.gif" width="200"><br>
+                            
+                            Latar belakang: organisasi investigasi swasta yang menangani kasus supernatural di luar jangkauan kepolisian biasa. Didirikan oleh Yukichi Fukuzawa.<br>
+                            Tujuan: menjaga keamaumanis, legal, menghargai nyawa, bekerja sama erat seperti keluarga.<br>
+    
+                            Ciri khas: humanis, legal, menghargai nyawa, bekerja sama erat seperti keluarga.<br><br>
+                            <br>
+                        </li>
+
+                        <li><b>Port Mafia </b><br>
+                            <img src="Bungou stray dogs gif port mafia.gif" width="200"><br>
+                            Latar belakang:Organisasi kriminal bawah tanah yang sangat kuat di Yokohama. Terlibat dalam perdagangan gelap, pembunuhan, dan kejahatan lainnya.<br>
+                            Tujuan: dunia bawah tanah dan mempertahankan kekuasaan mereka.<br>
+                             Ciri khas: kejam, setia pada atasan, kekuatan anggota sangat ofensif dan mematikan.<br>
+                            <br>
+                        </li>
+
+                        <li><b>The Guild</b><br>
+                            <img src="the gguild.jpeg" width="200"><br>
+                            Latar belakang: Organisasi dari Amerika yang beroperasi layaknya korporasi raksasa. Berbasis di kapal udara Moby Dick.<br>
+                            Tujuan:Menguasai wilayah Yokohama secara ekonomi dan kekuatan ability.<br>
+                            Ciri khas:Mewah, kapitalis, kekuatan finansial luar biasa besar.<br>
+                            <br>
+                        </li>
+
+        
+
+                        <li><b>Decay of the Angel</b><br>
+                            <img src="my favorite band __bsd.jpeg" width="200"> <br>
+                            Latar belakang:Kelompok teroris elit yang terdiri dari lima pengguna ability paling ekstrem.<br>
+                            Tujuan:Menghancurkan tatanan dunia dengan kekacauan dan teror.<br>
+                            Ciri khas:Simbolisme kuat, ekstremis, kekuatan destruktif tingkat tinggi.<br>
+                            <br>
+                        </li>
+
+                        <li><b>Hunting Dogs</b><br>
+                            <img src="hunting (1).jpeg" width="200"> <br>
+                            Latar belakang:Unit militer elit pemerintah Jepang. Bertugas mengeliminasi pengguna ability yang dianggap mengancam hukum dan keamanan nasional.<br>
+                            Tujuan:Menjaga ketertiban dengan kekuatan militer terhadap penyalahgunaan ability.<br>
+                            Ciri khas: Militeristik, brutal, loyal pada pemerintah, sangat kuat secara fisik dan ability.<br>
+                            <br>
+                        </li>
+                     </ol>                   
+ </section>
+  </main>
+ <footer>
+    Copyright &copy; Bungou stray dogs
+  </footer>                                
+                
+</body>
+</html>
